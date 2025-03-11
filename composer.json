@@ -1,5 +1,16 @@
 {
+    "name": "rudwolf/xd",
+    "description": "Un sitio web sencillo escrito en PHP.",
     "require": {
-        "monolog/monolog": "2.0.*"
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t public/"
     }
 }
